@@ -1,0 +1,257 @@
+body {
+            background-color: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+        .personal-message {
+            
+            font-size: 20px;
+        }
+        .stats {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 100px; /* Adjusted for navbar */
+        }
+        .circle-container {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+        }
+        .circle-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-image: url('https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/images/telegram.svg');
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.5);
+        }
+        .circle-button {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            outline: none;
+            z-index: 1;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .circle-button:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+        }
+        @keyframes particle-rise {
+            0% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) scale(1.5);
+            }
+        }
+        .particle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            pointer-events: none;
+            animation: particle-rise 0.6s linear;
+        }
+        .coin-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .redeem-button {
+    background-color: #333; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* For rounded corners */
+    box-shadow: 3px 7px 15px #000; /* Shadow effect */
+    background-image: url('https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/images/IMG_20240706_141042_302.jpg');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image in the container */
+}
+.redeem-button:hover {
+    background-color: #000; /* Darker Green */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.redeem-button:active {
+    background-color: Gold; /* Even Darker Green */
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for better appearance */
+.redeem-button span {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Optional additional styles for better aesthetics */
+.redeem-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 215, 0, 1);
+}
+.moving-heart {
+    display: inline-block;
+    animation: moveUpAndDown 1s infinite;
+}
+@keyframes moveUpAndDown {
+    0%, 100% {
+        transform: translateY(0) scale(0.80);
+    }
+    40% {
+        transform: translateY(-0px) scale(1.3);
+    }
+}
+.menu-button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 24px;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+        }
+        .menu-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(255, 215, 0, 1);
+        }
+        .text-danger {
+            color: red;
+            font-size: 1em;
+            animation: fadeInOut 1.50s infinite;
+        }
+
+        #heartIconWrapper {
+            animation: fadeInOut 0.50s infinite;
+        }
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+        .navbar-toggler {
+        background-color: #fff;
+        width: 55px; /* Adjust width as needed */
+        height: 40px; /* Adjust height as needed */
+        }
+        .navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 215, 0, 1);
+}
+        
+        .offcanvas-body {
+        background-color: #fff;
+        }
+        .offcanvas-header {
+        background-color: #000;
+        }
+       .btn-close {
+         background-color: #fff;
+       }
+      .btn-close:active {
+    background-color: Gold; /* Even Darker Green */
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.main-text {
+    color: #000; /* Text color */
+    font-size: 20px; /* Text size */
+    transition: color 0.5s, font-size 0.5s; /* Smooth transition effect */
+}
+
+.main-text:hover {
+    color: red; /* New text color on hover */
+    font-size: 30px; /* New text size on hover */
+}
+.redeem-buttons {
+    background-color: #333; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 0; /* Adjusted margin */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.redeem-buttons:hover {
+    background-color: #000; /* Darker Green */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.redeem-buttons:active {
+    background-color: Gold; /* Even Darker Green */
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for better appearance */
+.redeem-buttons span {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Optional additional styles for better aesthetics */
+.redeem-buttons:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 215, 0, 1);
+  }
