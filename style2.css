@@ -117,7 +117,7 @@ body {
     height: 80px;
     border-radius: 50%; /* For rounded corners */
     box-shadow: 3px 7px 15px #000; /* Shadow effect */
-    background-image: url('https://cdn.jsdelivr.net/gh/Jisshubot/Jisshubot/images/IMG_20240706_141042_302.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/sewxiy/lucy@main/images/photo_2024-04-14_09-14-12.jpg');
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the image in the container */
 }
